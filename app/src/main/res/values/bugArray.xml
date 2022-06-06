@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bugArray">
+        <item>검거세미밤나방</item>
+        <item>꽃노랑총채벌레</item>
+        <item>담배가루이</item>
+        <item>담배거세미나방</item>
+        <item>담배나방</item>
+        <item>도둑나방</item>
+        <item>먹노린재</item>
+        <item>목화바둑명나방</item>
+        <item>무잎벌</item>
+        <item>배추좀나방</item>
+        <item>배추흰나비</item>
+        <item>벼룩잎벌레</item>
+        <item>복숭아혹진딧물</item>
+        <item>비단노린재</item>
+        <item>썩덩나무노린재</item>
+        <item>알락수염노린재</item>
+        <item>열대거세미나방</item>
+        <item>점박이무당벌레</item>
+        <item>톱다리개미허리노린재</item>
+        <item>파밤나방</item>
+    </string-array>
+
+</resources>

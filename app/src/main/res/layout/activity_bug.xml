@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".bugDG">
+
+    <TextView
+        android:id="@+id/bug_solution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="해결 방법"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/bug_basicInfo"
+        app:layout_constraintStart_toStartOf="@+id/bug_basicInfo"
+        app:layout_constraintTop_toBottomOf="@+id/bug_basicInfo" />
+
+    <TextView
+        android:id="@+id/bug_solution_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bug_solution"
+        app:layout_constraintStart_toEndOf="@+id/bug_solution"
+        app:layout_constraintTop_toTopOf="@+id/bug_solution"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <ImageView
+        android:id="@+id/bug_image"
+        android:layout_width="169dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title_bug"
+        app:srcCompat="@drawable/no_image"
+        tools:srcCompat="@drawable/no_image" />
+
+    <TextView
+        android:id="@+id/bug_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="해충 종류"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bug_image" />
+
+    <Button
+        android:id="@+id/bug_basicInfo_site"
+        android:layout_width="197dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/detail"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Title_bug"
+        android:layout_width="257dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="76dp"
+        android:drawableBottom="@drawable/bug"
+        android:text="해충 도감"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/bug_type_tvs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:entries="@array/bugArray"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/bug_type"
+        app:layout_constraintStart_toEndOf="@+id/bug_type"
+        app:layout_constraintTop_toTopOf="@+id/bug_type" />
+
+    <TextView
+        android:id="@+id/bug_basicInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="기본 정보"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/bug_type"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bug_type"
+        app:layout_constraintTop_toBottomOf="@+id/bug_type" />
+
+    <TextView
+        android:id="@+id/bug_baisicInfo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bug_basicInfo"
+        app:layout_constraintStart_toEndOf="@+id/bug_basicInfo"
+        app:layout_constraintTop_toTopOf="@+id/bug_basicInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

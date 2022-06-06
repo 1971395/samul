@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".plantDG">
+
+  <ImageView
+      android:id="@+id/plant_image"
+      android:layout_width="169dp"
+      android:layout_height="172dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="50dp"
+      android:layout_marginEnd="20dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Title_plant"
+      app:srcCompat="@drawable/no_image"
+      tools:srcCompat="@drawable/no_image" />
+
+  <TextView
+      android:id="@+id/myPlant_type"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="50dp"
+      android:text="식물 종류"
+      android:textColor="#040404"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/plant_image" />
+
+  <TextView
+      android:id="@+id/myPlant_temperA"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:text="적정 온도"
+      android:textColor="#000000"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@+id/myPlant_temperP"
+      app:layout_constraintStart_toStartOf="@+id/myPlant_temperP"
+      app:layout_constraintTop_toBottomOf="@+id/myPlant_temperP" />
+
+  <TextView
+      android:id="@+id/myPlant_temperA_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:text="TextView"
+      android:textColor="#000000"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toBottomOf="@+id/myPlant_temperA"
+      app:layout_constraintStart_toEndOf="@+id/myPlant_temperA"
+      app:layout_constraintTop_toTopOf="@+id/myPlant_temperA" />
+
+  <TextView
+      android:id="@+id/myPlant_temperP"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:text="현재 온도"
+      android:textColor="#000000"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@+id/myPlant_type"
+      app:layout_constraintStart_toStartOf="@+id/myPlant_type"
+      app:layout_constraintTop_toBottomOf="@+id/myPlant_type" />
+
+  <TextView
+      android:id="@+id/myPlant_temperP_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:text="TextView"
+      android:textColor="#000000"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toBottomOf="@+id/myPlant_temperP"
+      app:layout_constraintStart_toEndOf="@+id/myPlant_temperP"
+      app:layout_constraintTop_toTopOf="@+id/myPlant_temperP" />
+
+  <Button
+      android:id="@+id/plant_basicInfo_site"
+      android:layout_width="161dp"
+      android:layout_height="60dp"
+      android:layout_marginBottom="40dp"
+      android:background="#00FFFFFF"
+      android:drawableBottom="@drawable/detail"
+      android:textColor="#000000"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+      android:id="@+id/Title_plant"
+      android:layout_width="257dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="76dp"
+      android:drawableBottom="@drawable/plant"
+      android:textAlignment="center"
+      android:textColor="#4CAF50"
+      android:textSize="24sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Spinner
+      android:id="@+id/plant_type_tvs"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:entries="@array/plantArray"
+      android:spinnerMode="dropdown"
+      app:layout_constraintBottom_toBottomOf="@+id/myPlant_type"
+      app:layout_constraintStart_toEndOf="@+id/myPlant_type"
+      app:layout_constraintTop_toTopOf="@+id/myPlant_type" />
+
+  <TextView
+      android:id="@+id/plant_waterPeriod"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:text="물 주기"
+      android:textColor="#000000"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="@+id/myPlant_temperA"
+      app:layout_constraintTop_toBottomOf="@+id/myPlant_temperA" />
+
+  <TextView
+      android:id="@+id/plant_waterPeriod_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:text="TextView"
+      android:textColor="#000000"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toBottomOf="@+id/plant_waterPeriod"
+      app:layout_constraintStart_toEndOf="@+id/plant_waterPeriod"
+      app:layout_constraintTop_toTopOf="@+id/plant_waterPeriod" />
+
+  <TextView
+      android:id="@+id/plant_basicInfo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:text="기본 정보"
+      android:textColor="#000000"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="@+id/plant_waterPeriod"
+      app:layout_constraintTop_toBottomOf="@+id/plant_waterPeriod" />
+
+  <TextView
+      android:id="@+id/plant_baisicInfo_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:text="TextView"
+      android:textColor="#000000"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toBottomOf="@+id/plant_basicInfo"
+      app:layout_constraintStart_toEndOf="@+id/plant_basicInfo"
+      app:layout_constraintTop_toTopOf="@+id/plant_basicInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
