@@ -66,9 +66,7 @@ public class myPlantActivity extends AppCompatActivity {
 
         myPlant_name = (TextView) findViewById(R.id.myPlant_name);
         myPlant_image = (VideoView) findViewById(R.id.myPlant_image);
-//        myPlant_type = (TextView) findViewById(R.id.myPlant_type_tv);
         myPlant_temperA = (TextView) findViewById(R.id.myPlant_temperA_tv);
-        myPlant_temperP = (TextView) findViewById(R.id.myPlant_temperP_tv);
         myPlant_firstDay = (TextView) findViewById(R.id.myPlant_firstDay_tv);
         myPlant_save = (Button) findViewById(R.id.myPlant_save);
         myPlant_type = (Spinner) findViewById(R.id.myPlant_type_tvs);

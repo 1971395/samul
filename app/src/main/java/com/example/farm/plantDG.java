@@ -48,7 +48,6 @@ public class plantDG extends AppCompatActivity {
 
         plant_image = (ImageView) findViewById(R.id.plant_image);
         spinnerP = (Spinner) findViewById(R.id.plant_type_tvs);
-        plant_temperP_tv = (TextView)findViewById(R.id.myPlant_temperP_tv);
         plant_temperA_tv = (TextView) findViewById(R.id.myPlant_temperA_tv);
         plant_waterPeriod_tv = (TextView) findViewById(R.id.plant_waterPeriod_tv);
         plant_basicInfo_tv = (TextView) findViewById(R.id.plant_baisicInfo_tv);
